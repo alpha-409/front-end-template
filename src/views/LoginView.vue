@@ -2,8 +2,6 @@
   <div class="min-h-screen flex items-center justify-center bg-cover bg-center" :style="{ backgroundImage: `url(${backgroundImage})` }">
     <div class="bg-white rounded-lg shadow-xl overflow-hidden flex max-w-4xl w-full">
       <div class="bg-primary text-white p-12 flex-1">
-        <h2 class="text-3xl font-bold mb-6">AI辅助师范生</h2>
-        <h3 class="text-xl mb-8">技能评测系统</h3>
         <div class="flex justify-between items-center">
           <img src="/loginPCTool.webp" alt="设备图标" class="w-full h-auto object-contain" />
         </div>
