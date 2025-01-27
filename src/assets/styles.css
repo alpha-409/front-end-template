@@ -1,0 +1,73 @@
+/* src/assets/styles.css */
+
+/* element plus 设置全局主题色 */
+:root {
+  --el-color-primary: #A46297;  /* 修改Element Plus主题色 */
+  --el-color-success: #34d399;
+  --el-color-warning: #f59e0b;
+  --el-color-error: #ef4444;
+  --el-color-info: #60a5fa;
+
+  /* 按钮背景色和边框色 */
+  --el-button-bg-color: #A46297;
+  --el-button-border-color: #A46297;
+  --el-button-hover-bg-color: #9b4d6d;  /* 按钮悬停时的背景色 */
+  --el-button-hover-border-color: #9b4d6d;  /* 按钮悬停时的边框色 */
+
+  /* 输入框相关颜色 */
+  --el-input-border-color: #d1d5db;
+  --el-input-focus-border-color: #A46297;  /* 输入框聚焦时的边框颜色 */
+}
+
+/* 覆盖按钮颜色 */
+.el-button--primary {
+  background-color: var(--el-color-primary);
+  border-color: var(--el-color-primary);
+}
+
+.el-button--primary:hover {
+  background-color: var(--el-button-hover-bg-color);
+  border-color: var(--el-button-hover-border-color);
+}
+
+/* 覆盖输入框边框 */
+.el-input__inner {
+  border-color: var(--el-input-border-color);
+}
+
+.el-input__inner:focus {
+  border-color: var(--el-input-focus-border-color);
+}
+
+/* 其他可能需要覆盖的元素样式 */
+.el-link {
+  color: var(--el-color-primary);
+}
+
+.el-link:hover {
+  color: var(--el-button-hover-bg-color);
+}
+
+.el-tabs__item.is-active {
+  color: var(--el-color-primary);
+}
+
+.el-card__header {
+  background-color: var(--el-color-primary);
+  color: white;
+}
+
+/* 输入框、按钮的默认颜色也可以根据需要调整 */
+.el-input__inner {
+  background-color: white;
+  color: #333;
+}
+
+.el-button--primary:active {
+  background-color: var(--el-button-hover-bg-color);
+  border-color: var(--el-button-hover-border-color);
+}
+/* 设置 Element Plus 的图标颜色为主题色 */
+.el-icon {
+  color: var(--el-color-primary);
+}
