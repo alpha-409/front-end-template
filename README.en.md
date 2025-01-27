@@ -1,4 +1,4 @@
-## Teacher Training AI Assessment - Frontend Development Documentation
+## Frontend Development Documentation
 
 ---
 
