@@ -1,14 +1,26 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { useAuthStore } from '@/stores/auth'
+import HomeView from '@/views/HomeView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: () => import('@/views/HomeView.vue'),
-      meta: { requiresAuth: true }
+      component: HomeView,
+      meta: { requiresAuth: true },
+      children: [
+        {
+          path: '',
+          name: 'home',
+          component: () => import('@/views/home/HomeContent.vue') // 默认首页内容
+        },
+        {
+          path: 'dashboard',
+          name: 'dashboard',
+          component: () => import('@/views/home/Dashboard.vue') // 仪表盘页面
+        }
+      ]
     },
     {
       path: '/login',

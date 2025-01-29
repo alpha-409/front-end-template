@@ -3,7 +3,7 @@ import Mock from 'mockjs';
 // 模拟登录接口
 Mock.mock('/api/student/auth/login', 'post', (options) => {
   const { username, password } = JSON.parse(options.body);
-  if (username === 'student' && password === '123456') {
+  if (username === 'test' && password === '123456') {
     return {
       code: 200,
       message: '登录成功',
